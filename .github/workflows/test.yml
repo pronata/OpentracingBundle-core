@@ -21,13 +21,7 @@ jobs:
     strategy:
       matrix:
           - symfony: '5.4.*'
-            php: '8.0'
-          - symfony: '5.4.*'
-            php: '8.1'
-          - symfony: '5.4.*'
             php: '8.2'
-          - symfony: '6.2.*'
-            php: '8.1'
           - symfony: '6.2.*'
             php: '8.2'
           - symfony: '7.1.*'
@@ -67,13 +61,7 @@ jobs:
       matrix:
         include:
           - symfony: '5.4.*'
-            php: '8.0'
-          - symfony: '5.4.*'
-            php: '8.1'
-          - symfony: '5.4.*'
             php: '8.2'
-          - symfony: '6.2.*'
-            php: '8.1'
           - symfony: '6.2.*'
             php: '8.2'
           - symfony: '7.1.*'
