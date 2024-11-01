@@ -24,11 +24,11 @@
     "psr/http-client": "^1.0",
     "opentracing/opentracing": "^1.0.1",
     "composer/package-versions-deprecated": "^1.11.99",
-    "symfony/http-kernel": "^4.4|^5.4|^6.2",
-    "symfony/dependency-injection": "^4.4|^5.4|^6.2",
-    "symfony/config": "^4.4|^5.4|^6.2",
-    "symfony/console": "^4.4|^5.4|^6.2",
-    "symfony/yaml": "^4.4|^5.4|^6.2"
+    "symfony/http-kernel": "^5.4|^6.2|^7.1",
+    "symfony/dependency-injection": "^5.4|^6.2|^7.1",
+    "symfony/config": "^5.4|^6.2|^7.1",
+    "symfony/console": "^5.4|^6.2||^7.1",
+    "symfony/yaml": "^5.4|^6.2|^7.1"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
