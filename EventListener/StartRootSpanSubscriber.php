@@ -40,15 +40,8 @@ final class StartRootSpanSubscriber implements EventSubscriberInterface
 
     public function onRequest(KernelEvent $event): void
     {
-        # TODO: when Symfony 4.4 is unmaintained (November 2023), remove outer if-block in favor of isMainRequest()
-        if (method_exists($event, 'isMainRequest')) {
-            if (!$event->isMainRequest()) {
-                return;
-            }
-        } elseif (method_exists($event, 'isMasterRequest')) {
-            if (!$event->isMasterRequest()) {
-                return;
-            }
+        if (!$event->isMainRequest()) {
+            return;
         }
 
         $request = $event->getRequest();
