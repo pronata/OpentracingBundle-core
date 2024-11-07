@@ -1,5 +1,5 @@
 {
-  "name": "auxmoney/opentracing-bundle-core",
+  "name": "pronata/opentracing-bundle-core",
   "description": "Symfony Opentracing bundle to easily enable distributed tracing",
   "keywords": [
     "auxmoney",
@@ -17,7 +17,7 @@
   "type": "library",
   "license": "MIT",
   "require": {
-    "php": "^8.2",
+    "php": "^8.1",
     "ext-json": "*",
     "psr/log": "^1.1|^2.0|^3.0",
     "psr/http-message": "^1.0",
