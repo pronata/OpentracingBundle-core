@@ -20,22 +20,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        include:
-          - symfony: '4.4.*'
-            php: '8.0'
-          - symfony: '4.4.*'
-            php: '8.1'
-          - symfony: '4.4.*'
-            php: '8.2'
-          - symfony: '5.4.*'
-            php: '8.0'
-          - symfony: '5.4.*'
-            php: '8.1'
           - symfony: '5.4.*'
             php: '8.2'
           - symfony: '6.2.*'
-            php: '8.1'
-          - symfony: '6.2.*'
+            php: '8.2'
+          - symfony: '7.1.*'
             php: '8.2'
     steps:
       - name: checkout
@@ -71,21 +60,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - symfony: '4.4.*'
-            php: '8.0'
-          - symfony: '4.4.*'
-            php: '8.1'
-          - symfony: '4.4.*'
-            php: '8.2'
-          - symfony: '5.4.*'
-            php: '8.0'
-          - symfony: '5.4.*'
-            php: '8.1'
           - symfony: '5.4.*'
             php: '8.2'
           - symfony: '6.2.*'
-            php: '8.1'
-          - symfony: '6.2.*'
+            php: '8.2'
+          - symfony: '7.1.*'
             php: '8.2'
     steps:
       - name: checkout
