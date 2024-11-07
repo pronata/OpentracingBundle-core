@@ -20,15 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-          - symfony: '5.4.*'
-            php: '8.2'
-          - symfony: '6.2.*'
-            php: '8.2'
+        include:
           - symfony: '7.1.*'
             php: '8.2'
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup PHP Action
         uses: shivammathur/setup-php@v2
         with:
@@ -60,15 +57,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - symfony: '5.4.*'
-            php: '8.2'
-          - symfony: '6.2.*'
-            php: '8.2'
           - symfony: '7.1.*'
             php: '8.2'
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup PHP Action
         uses: shivammathur/setup-php@v2
         with:
