@@ -1,5 +1,5 @@
 {
-  "name": "pronata/opentracing-bundle-core",
+  "name": "auxmoney/opentracing-bundle-core",
   "description": "Symfony Opentracing bundle to easily enable distributed tracing",
   "keywords": [
     "auxmoney",
