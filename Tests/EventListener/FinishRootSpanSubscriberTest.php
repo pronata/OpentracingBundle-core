@@ -42,8 +42,7 @@ class FinishRootSpanSubscriberTest extends TestCase
 
     public function testOnFinishRequestIsMainRequest(): void
     {
-        # TODO: when Symfony 4.4 is unmaintained (November 2023), replace HttpKernelInterface::MASTER_REQUEST with HttpKernelInterface::MAIN_REQUEST
-        $event = new KernelEvent($this->kernel->reveal(), $this->request->reveal(), HttpKernelInterface::MASTER_REQUEST);
+        $event = new KernelEvent($this->kernel->reveal(), $this->request->reveal(), HttpKernelInterface::MAIN_REQUEST);
 
         $this->tracing->finishActiveSpan()->shouldBeCalledOnce();
         $this->persistence->flush()->shouldNotBeCalled();
@@ -63,8 +62,7 @@ class FinishRootSpanSubscriberTest extends TestCase
 
     public function testOnTerminateIsMainRequest(): void
     {
-        # TODO: when Symfony 4.4 is unmaintained (November 2023), replace HttpKernelInterface::MASTER_REQUEST with HttpKernelInterface::MAIN_REQUEST
-        $event = new KernelEvent($this->kernel->reveal(), $this->request->reveal(), HttpKernelInterface::MASTER_REQUEST);
+        $event = new KernelEvent($this->kernel->reveal(), $this->request->reveal(), HttpKernelInterface::MAIN_REQUEST);
 
         $this->tracing->finishActiveSpan()->shouldNotBeCalled();
         $this->persistence->flush()->shouldBeCalledOnce();
@@ -74,7 +72,6 @@ class FinishRootSpanSubscriberTest extends TestCase
 
     public function testOnTerminateIsNotMainRequest(): void
     {
-        # TODO: when Symfony 4.4 is unmaintained (November 2023), replace HttpKernelInterface::MASTER_REQUEST with HttpKernelInterface::MAIN_REQUEST
         $event = new KernelEvent($this->kernel->reveal(), $this->request->reveal(), HttpKernelInterface::SUB_REQUEST);
 
         $this->tracing->finishActiveSpan()->shouldNotBeCalled();
