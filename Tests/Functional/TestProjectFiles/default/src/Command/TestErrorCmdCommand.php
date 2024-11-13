@@ -22,7 +22,7 @@ class TestErrorCmdCommand extends Command
         $this->opentracing = $opentracing;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $carrier = [];
         $this->opentracing->getTracerInstance()->inject($this->opentracing->getTracerInstance()->getActiveSpan()->getContext(), TEXT_MAP, $carrier);
