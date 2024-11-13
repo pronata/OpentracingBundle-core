@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/pronata/OpentracingBundle-core/compare/v1.3.1...v1.4.0) (2024-11-13)
+
+
+### Features
+
+* support Symfony 7 ([75b9350](https://github.com/pronata/OpentracingBundle-core/commit/75b935099187937e9cf4be0d3f8ce19e13966eb4))
+
 ## [1.3.1](https://github.com/auxmoney/OpentracingBundle-core/compare/v1.3.0...v1.3.1) (2023-04-24)
 
 
